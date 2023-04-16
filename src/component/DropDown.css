@@ -1,0 +1,30 @@
+.chess-board .pieces-dropdown{
+    box-shadow: 0 0 5px lightgray;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+.chess-board .pieces-dropdown .dropdown-box.box{
+    cursor: pointer;
+}
+.chess-board .pieces-dropdown .dropdown-box.box:hover{
+    background-color: lightgray;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.chess-board .pieces-dropdown-parent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.1);
+}

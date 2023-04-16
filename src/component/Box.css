@@ -1,0 +1,83 @@
+.box{
+    padding: 0.1rem;
+    height: 90px;
+    width: 90px;
+    position: relative;
+}
+
+.white{
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 167, 65);
+}
+
+.green{
+    background-color: rgb(71, 97, 63);
+    color: rgb(241, 241, 241);
+}
+
+.selected{
+    background-color: rgb(244, 244, 83);
+    color: rgb(91, 125, 80);
+}
+
+.possible{
+    position: relative;
+}
+
+.possible .sphere{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 30%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+.possible .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid rgb(175, 175, 175);
+}
+
+.box-row,.box-column,.box-number{
+    position: absolute;
+    /* display: none; */
+    font-weight: bold;
+}
+
+.box-row{
+    top:5px;
+    left: 5px;
+}
+
+.box-column{
+    bottom:5px;
+    right: 5px;
+}
+
+.box-number{
+    top:5px;
+    right: 5px;
+    display: none;
+}
+
+.box img{
+    height: calc(100% - 15px);
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+/* .box:hover{
+    border: 3px solid black;
+} */
